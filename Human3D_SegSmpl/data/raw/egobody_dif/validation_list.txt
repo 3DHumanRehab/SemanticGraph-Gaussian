@@ -1,0 +1,1 @@
+egobody_sample_single_human_no_background_no_color.ply

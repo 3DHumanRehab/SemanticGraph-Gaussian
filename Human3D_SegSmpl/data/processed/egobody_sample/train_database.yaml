@@ -1,0 +1,5 @@
+- filepath: ../../data/processed/egobody/train/recording_20210907_S02_S01_01_main_frame_01551.npy
+  gt_human_filepath: ../../data/processed/egobody/gt_human/train/recording_20210907_S02_S01_01_main_frame_01551.txt
+  gt_part_filepath: ../../data/processed/egobody/gt_part/train/recording_20210907_S02_S01_01_main_frame_01551.txt
+  raw_filepath: ../../data/raw/egobody_sample/recording_20210907_S02_S01_01/main/frame_01551.ply
+  scene: recording_20210907_S02_S01_01_main_frame_01551

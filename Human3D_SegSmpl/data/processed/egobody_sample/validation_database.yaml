@@ -1,0 +1,5 @@
+- filepath: ../../data/processed/egobody/validation/recording_20211004_S12_S20_01_main_frame_01141.npy
+  gt_human_filepath: ../../data/processed/egobody/gt_human/validation/recording_20211004_S12_S20_01_main_frame_01141.txt
+  gt_part_filepath: ../../data/processed/egobody/gt_part/validation/recording_20211004_S12_S20_01_main_frame_01141.txt
+  raw_filepath: ../../data/raw/egobody_sample/recording_20211004_S12_S20_01/main/frame_01141.ply
+  scene: recording_20211004_S12_S20_01_main_frame_01141
