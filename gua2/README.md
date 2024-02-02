@@ -34,15 +34,25 @@ We recommend using anaconda to manage the python environments.
 ```bash
     conda create --name gauhuman python=3.8
     conda activate gauhuman
-    conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+    #conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+    pip install torch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 --index-url https://download.pytorch.org/whl/cu118
     pip install submodules/diff-gaussian-rasterization
+    pip install submodules/diff-gaussian-rasterization-obj
     pip install submodules/simple-knn
     pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
     pip install -r requirement.txt
     pip install paddlepaddle -i https://mirror.baidu.com/pypi/simple
     pip install paddlehub -i https://mirror.baidu.com/pypi/simple
+    node2vec
+    clip
+    ninja
+    torchmetrics
+    pip install torch_geometric --no-deps
+    pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+    #open3d
     pip install matplotlib
     pip install Pillow
+    protobuf==3.20.0
 ```
 
 Tips: We implement the [alpha mask loss version](https://github.com/ashawkey/diff-gaussian-rasterization) based on the official [diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization/tree/59f5f77e3ddbac3ed9db93ec2cfe99ed6c5d121d).

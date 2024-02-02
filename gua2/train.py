@@ -134,7 +134,9 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
         # lipis loss
         lpips_loss = loss_fn_vgg(img_pred, img_gt).reshape(-1)
         loss = Ll1 + 0.1 * mask_loss + 0.01 * (1.0 - ssim_loss) + 0.01 * lpips_loss
-        print("gua_loss={}".format(loss))
+        if iteration%10==0:
+            print("gua_loss={}".format(loss))
+            print(f'\niteration: {iteration}/{opt.iterations}\n')
 
         # Semantic supervision loss
         frozen_labels = torch.argmax(gaussians._objects_dc.squeeze(1), dim=1)
@@ -380,15 +382,17 @@ if __name__ == "__main__":
     parser.add_argument('--port', type=int, default=7004)
     parser.add_argument('--debug_from', type=int, default=-1)
     parser.add_argument('--detect_anomaly', action='store_true', default=False)
-    parser.add_argument("--test_iterations", nargs="+", type=int, default=[1_200, 2_000, 3_000, 7_000, 30_000])
-    parser.add_argument("--save_iterations", nargs="+", type=int, default=[1_200, 2_000, 3_000, 7_000, 30_000])
+    parser.add_argument("--test_iterations", nargs="+", type=int, default=[500,700,900,1200, 2000, 3000, 7000, 30000])
+    parser.add_argument("--save_iterations", nargs="+", type=int, default=[500,700,900,1200, 2000, 3000, 7000, 30000])
     parser.add_argument("--quiet", action="store_true")
-    parser.add_argument("--checkpoint_iterations", nargs="+", type=int, default=[])
+    parser.add_argument("--checkpoint_iterations", nargs="+", type=int, default=[500,700,900,1200])
     parser.add_argument("--start_checkpoint", type=str, default = None)
     parser.add_argument("--coarse_iteration", type=int, default=500)
     parser.add_argument("--subgraph_sample", type=int, default=30)
     parser.add_argument("--graph_sample", type=int, default=50)
+    
     args = parser.parse_args(sys.argv[1:])
+    args.test_iterations.append(args.iterations)
     args.save_iterations.append(args.iterations)
 
     print("Optimizing " + args.model_path)

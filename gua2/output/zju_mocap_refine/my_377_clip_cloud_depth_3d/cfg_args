@@ -1,0 +1,1 @@
+Namespace(actor_gender='neutral', data_device='cuda', eval=True, exp_name='zju_mocap_refine/my_377_clip_cloud_depth_3d', images='images', model_path='./output/zju_mocap_refine/my_377_clip_cloud_depth_3d', motion_offset_flag=True, resolution=-1, sh_degree=3, smpl_type='smpl', source_path='/HOME/HOME/Zhangweiyue/gau2/data/zju_mocap_refine/my_377', white_background=False)

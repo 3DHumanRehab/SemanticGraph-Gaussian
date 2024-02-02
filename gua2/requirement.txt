@@ -4,3 +4,4 @@ tensorboard==2.14.0
 lpips==0.1.4
 tqdm==4.66.1
 numpy==1.23.5
+protobuf==3.20.0
