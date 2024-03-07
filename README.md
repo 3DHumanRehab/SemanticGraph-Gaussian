@@ -1,1 +1,1 @@
-# EAST-Human: Explicit Semantic-Structural Topology-Guided Human Gaussian
+# Gaussian Control with Hierarchical Semantic Graphs in 3D Human Recovery
