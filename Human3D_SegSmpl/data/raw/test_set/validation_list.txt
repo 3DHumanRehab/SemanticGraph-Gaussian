@@ -1,6 +1,0 @@
-project_smpl.ply
-sample_human.ply
-smpl_back.ply
-smpl_front.ply
-smpl_gaussian.ply
-smpl.ply
