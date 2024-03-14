@@ -2,15 +2,6 @@
 
 <h1>Gaussian Control with Hierarchical Semantic Graphs in 3D Human Recovery</h1>
 
-<div>
-    <a href="" target="_blank">Sihao Liu</a>;
-    <a href="" target="_blank">Hongsheng Wang</a>
-    <a href="" target="_blank">Weiyue Zhang</a>
-</div>
-<div>
-    Zhejiang Lab
-</div>
-
 HUGS is excellent at handling **semantic obfuscations caused  by occlusion** and **high-frequency surface details**.
 
 <div style="width: 70%; text-align: center; margin:auto;">
