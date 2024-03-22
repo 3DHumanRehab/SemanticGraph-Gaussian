@@ -139,7 +139,7 @@ def get_colors_from_labels(labels):
     return colors
 
 if __name__ == '__main__':
-    smpl_path = '.assets/SMPL_NEUTRAL.pkl'
+    smpl_path = './assets/SMPL_NEUTRAL.pkl'
     save_path = './assets/smpl_semantic.ply'
     with open(smpl_path, 'rb') as f:
         params = pickle.load(f,encoding="latin1")

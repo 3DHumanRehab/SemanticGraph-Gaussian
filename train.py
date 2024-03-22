@@ -78,7 +78,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
     # lpips_test_lst = []
     pre_graph = None
     elapsed_time = 0
-    pcd_path = 'assets/smpl_semantic.ply'  # sample input scene
+    pcd_path = './assets/smpl_semantic.ply'  # sample input scene
     file_list = [pcd_path]  # for now just the demo scene
     pre_dataset = HumanSegmentationDataset(file_list=file_list)
     coords, colors, labels = pre_dataset.load_pc(pcd_path)
